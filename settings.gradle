@@ -1,0 +1,3 @@
+rootProject.name = 'mcsv_matricula'
+
+include('mcsv-curso')

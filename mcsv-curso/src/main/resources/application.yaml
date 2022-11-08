@@ -1,0 +1,26 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: mcsv-curso
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_matricula?useSSL=false&useTimezone=true&serverTimezone=America/Bogota&allowPublicKeyRetrieval=true
+    username: postgres
+    password: admin
+  jpa:
+    generate-ddl: true
+    hibernate:
+      #ddl-auto: create-drop
+    properties:
+      jdbc:
+        lob_contextual_creation: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
